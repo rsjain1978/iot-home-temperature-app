@@ -8,3 +8,8 @@ MQTT protocol.
 
 - Clond the app or if you prefer to download then download it.
 - Use Mongoose CLI to build and flash it:
+
+## TODO
+
+- Modify application to allow OTA updates to WiFi & AWS IoT settings.
+- Add AWS CloudFormation scripts for automated configuration of AWS side of things to support this app.
