@@ -1,0 +1,7 @@
+aws-esp8266_FDE577.crt.pem
+aws-esp8266_FDE577.key.pem
+/deps
+/build
+/fs/aws-esp8266_FDE577.crt.pem
+/fs/aws-esp8266_FDE577.key.pem
+/fs/ca.pem

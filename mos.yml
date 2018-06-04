@@ -1,0 +1,36 @@
+author: Rahul Jain <rsjain1978@gmail.com>
+description: IoT Application to detect flames and on detection send a message to AWS IOT.
+version: 0.1
+
+libs_version: ${mos.version}
+modules_version: ${mos.version}
+mongoose_os_version: ${mos.version}
+
+# Optional. List of tags for online search.
+tags:
+  - c
+
+# List of files / directories with C sources. No slashes at the end of dir names.
+sources:
+  - src
+
+# List of dirs. Files from these dirs will be copied to the device filesystem
+filesystem:
+  - fs
+
+libs:
+    - origin: https://github.com/mongoose-os-libs/ca-bundle
+    - origin: https://github.com/mongoose-os-libs/rpc-service-config
+    - origin: https://github.com/mongoose-os-libs/rpc-service-fs
+    - origin: https://github.com/mongoose-os-libs/rpc-uart
+    - origin: https://github.com/mongoose-os-libs/dht  # <-- Add this line!
+    - origin: https://github.com/mongoose-os-libs/mjs
+    - origin: https://github.com/mongoose-os-libs/aws
+    - origin: https://github.com/mongoose-os-libs/wifi
+
+config_schema:
+  - ["app", "o", {title: "My app custom settings"}]
+  - ["app.pin", "i", 4, {title: "GPIO pin a sensor is attached to"}]
+       
+# Used by the mos tool to catch mos binaries incompatible with this file format
+manifest_version: 2017-09-29
