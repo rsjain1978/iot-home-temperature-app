@@ -1,5 +1,5 @@
 author: Rahul Jain <rsjain1978@gmail.com>
-description: IoT Application to detect flames and on detection send a message to AWS IOT.
+description: oT Application for monitoring and recording temperature and humidity on AWS IoT
 version: 0.1
 
 libs_version: ${mos.version}
